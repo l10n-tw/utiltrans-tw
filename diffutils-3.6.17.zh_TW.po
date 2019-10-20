@@ -1114,7 +1114,7 @@ msgid ""
 "                           a colon-separated list of terminfo capabilities"
 msgstr ""
 "    --palette=調色盤     啟用 --color 後要用的顏色；<調色盤> 是使用\n"
-"                         冒號 (:) 分隔的 terminfo 功能 (capabilities)\n"
+"                         冒號 (:) 分隔的 terminfo 功能 (capabilities)"
 
 #: src/diff.c:979
 msgid "    --help               display this help and exit"
