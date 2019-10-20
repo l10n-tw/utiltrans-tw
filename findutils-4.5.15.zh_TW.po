@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: findutils 4.5.15\n"
 "Report-Msgid-Bugs-To: bug-findutils@gnu.org\n"
 "POT-Creation-Date: 2015-12-18 14:45+0000\n"
-"PO-Revision-Date: 2019-10-21 00:04+0800\n"
+"PO-Revision-Date: 2019-10-21 01:15+0800\n"
 "Last-Translator: pan93412 <pan93412@gmail.com>\n"
 "Language-Team: Chinese <chinese-l10n@googlegroups.com>\n"
 "Language: zh_TW\n"
@@ -457,7 +457,7 @@ msgstr ""
 #: find/parser.c:1194
 #, c-format
 msgid "%s is not the name of an existing group"
-msgstr ""
+msgstr "%s 名稱不屬於任何現存群組"
 
 #: find/parser.c:1200
 #, c-format
@@ -575,7 +575,7 @@ msgstr ""
 #: find/parser.c:1447
 #, c-format
 msgid "Expected a positive decimal integer argument to %s, but got %s"
-msgstr ""
+msgstr "期望傳入 %s 的是正十進位整數參數，但卻是 %s"
 
 #: find/parser.c:1612
 #, c-format
@@ -659,7 +659,7 @@ msgstr "啟用了的功能："
 #: find/parser.c:2653
 #, c-format
 msgid "invalid predicate -context: SELinux is not enabled."
-msgstr ""
+msgstr "-context 謂語無效：未啟用 SELinux。"
 
 #: find/parser.c:2717
 #, c-format
@@ -889,12 +889,12 @@ msgstr "路徑必須放在表達式之前：%s"
 #: find/tree.c:1303
 #, c-format
 msgid "unknown predicate `%s'"
-msgstr ""
+msgstr "未知謂語「%s」"
 
 #: find/tree.c:1323
 #, c-format
 msgid "invalid predicate `%s'"
-msgstr ""
+msgstr "無效謂語「%s」"
 
 #: find/tree.c:1328
 #, c-format
@@ -914,12 +914,12 @@ msgstr "過多「)」"
 #: find/tree.c:1418
 #, c-format
 msgid "unexpected extra predicate '%s'"
-msgstr ""
+msgstr "非預期延伸謂語「%s」"
 
 #: find/tree.c:1420
 #, c-format
 msgid "unexpected extra predicate"
-msgstr ""
+msgstr "非預期延伸謂語"
 
 #: find/tree.c:1553
 #, c-format
@@ -959,24 +959,24 @@ msgstr "傳入 -D 選項的參數空白。"
 #: find/util.c:847
 #, c-format
 msgid "The -O option must be immediately followed by a decimal integer"
-msgstr ""
+msgstr "必須在 -O 後立即接著一個十進位數字"
 
 #: find/util.c:857 find/util.c:868
 #, c-format
 msgid "Please specify a decimal number immediately after -O"
-msgstr ""
+msgstr "請在 -O 後立即指定一個十進位數字"
 
 #: find/util.c:873 find/util.c:878
 #, c-format
 msgid "Invalid optimisation level %s"
-msgstr ""
+msgstr "最佳化等級 %s 無效"
 
 #: find/util.c:886
 #, c-format
 msgid ""
 "Optimisation level %lu is too high.  If you want to find files very quickly, "
 "consider using GNU locate."
-msgstr ""
+msgstr "最佳化等級 %lu 過高。如果你希望非常快速地尋找檔案，請考慮使用 GNU locate。"
 
 #: find/util.c:1030
 #, c-format
@@ -1041,6 +1041,12 @@ msgid ""
 "There is NO WARRANTY, to the extent permitted by law.\n"
 "\n"
 msgstr ""
+"\n"
+"GPLv3+ 授權條款：GNU GPL 第三版或更新版本 <http://gnu.org/licenses/gpl."
+"html>。\n"
+"這是自由軟體：你能自由變更及重散佈。\n"
+"在法律允許的範圍內沒有任何擔保。\n"
+"\n"
 
 #. TRANSLATORS: The placeholder indicates the bug-reporting address
 #. for this package.  Please add _another line_ saying
@@ -1072,7 +1078,7 @@ msgstr "指令太長"
 #: lib/buildcmd.c:301
 #, c-format
 msgid "can't call exec() due to argument size restrictions"
-msgstr ""
+msgstr "因參數大小限制而無法呼叫 exec()"
 
 #: lib/buildcmd.c:371
 #, c-format
@@ -1087,7 +1093,7 @@ msgstr "參數列表過長"
 #: lib/buildcmd.c:629
 #, c-format
 msgid "Environment variable %s is not set to a valid decimal number"
-msgstr ""
+msgstr "%s 環境變數並未設定成有效的十進位數字"
 
 #: lib/fdleak.c:377
 #, c-format
@@ -1121,12 +1127,12 @@ msgstr ""
 #: lib/safe-atoi.c:81
 #, c-format
 msgid "Unexpected suffix %s on %s"
-msgstr ""
+msgstr "%2$s 上有非預期的 %1$s 後綴"
 
 #: lib/safe-atoi.c:87
 #, c-format
 msgid "Expected an integer: %s"
-msgstr ""
+msgstr "期望整數：%s"
 
 #: locate/code.c:131
 #, c-format
@@ -1149,7 +1155,7 @@ msgstr ""
 #: locate/frcode.c:160
 #, c-format
 msgid "Usage: %s [-0 | --null] [--version] [--help]\n"
-msgstr ""
+msgstr "用法：%s [-0 | --null] [--version] [--help]\n"
 
 #: locate/frcode.c:180
 #, c-format
@@ -1203,7 +1209,7 @@ msgstr "定位資料庫「%s」損壞或無效"
 #: locate/locate.c:865
 #, c-format
 msgid "Database was last modified at %s.%09ld"
-msgstr ""
+msgstr "資料庫上次修改於 %s.%09ld"
 
 #: locate/locate.c:873
 #, c-format
@@ -1326,19 +1332,19 @@ msgstr ""
 
 #: locate/locate.c:1448
 msgid "failed to drop group privileges"
-msgstr ""
+msgstr "無法拋棄群組權限"
 
 #: locate/locate.c:1466
 msgid "failed to drop setuid privileges"
-msgstr ""
+msgstr "無法拋棄 setuid 權限"
 
 #: locate/locate.c:1480
 msgid "Failed to fully drop privileges"
-msgstr ""
+msgstr "無法完全拋棄權限"
 
 #: locate/locate.c:1498
 msgid "failed to drop setgid privileges"
-msgstr ""
+msgstr "無法拋棄 setgid 權限"
 
 #: locate/locate.c:1778
 #, c-format
@@ -1348,7 +1354,7 @@ msgstr "警告：locate 資料庫只可以由標準輸入讀取一次。"
 #: locate/locate.c:1851
 #, c-format
 msgid "time system call failed"
-msgstr ""
+msgstr "時間系統乎教師敗"
 
 # e.g. database `%s' is more than 8 days old
 #: locate/locate.c:1862
@@ -1364,7 +1370,7 @@ msgstr ""
 #: locate/word_io.c:145
 #, c-format
 msgid "unexpected EOF in %s"
-msgstr ""
+msgstr "%s 中有非預期的檔案結尾"
 
 #: locate/word_io.c:148
 #, c-format
@@ -1434,12 +1440,12 @@ msgstr ""
 #: xargs/xargs.c:663
 #, c-format
 msgid "Cannot set SIGUSR1 signal handler"
-msgstr ""
+msgstr "無法設定 SIGUSR1 信號處理器"
 
 #: xargs/xargs.c:669
 #, c-format
 msgid "Cannot set SIGUSR2 signal handler"
-msgstr ""
+msgstr "無法設定 SIGUSR2 信號處理器"
 
 #: xargs/xargs.c:685
 #, c-format
@@ -1621,7 +1627,7 @@ msgstr ""
 msgid ""
 "Mandatory and optional arguments to long options are also\n"
 "mandatory or optional for the corresponding short option.\n"
-msgstr ""
+msgstr "傳入長選項的必選及選用參數，對相對應的短選項亦然。\n"
 
 #: xargs/xargs.c:1639
 msgid ""
@@ -1635,7 +1641,7 @@ msgstr ""
 #: xargs/xargs.c:1642
 msgid ""
 "  -a, --arg-file=FILE          read arguments from FILE, not standard input\n"
-msgstr ""
+msgstr "  -a, --arg-file=檔案          從 <檔案> 而非標準輸入讀取參數\n"
 
 #: xargs/xargs.c:1643
 msgid ""
@@ -1662,7 +1668,7 @@ msgstr ""
 
 #: xargs/xargs.c:1651
 msgid "  -I R                         same as --replace=R\n"
-msgstr ""
+msgstr "  -I R                         等於 --replace=R\n"
 
 #: xargs/xargs.c:1652
 msgid ""
