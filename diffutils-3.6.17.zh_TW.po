@@ -1,54 +1,57 @@
 # traditional Chinese translation of diffutils.
 # Copyright (C) 2002, 2005 Free Software Foundation, Inc.
-# Abel Cheung <maddog@linux.org.hk>, 2002, 2005.
 #
+# Abel Cheung <maddog@linux.org.hk>, 2002, 2005.
+# pan93412 <pan93412@gmail.com>, 2019.
 msgid ""
 msgstr ""
 "Project-Id-Version: diffutils 2.8.7\n"
 "Report-Msgid-Bugs-To: bug-diffutils@gnu.org\n"
 "POT-Creation-Date: 2018-12-26 14:31-0800\n"
-"PO-Revision-Date: 2005-04-01 14:31+0800\n"
-"Last-Translator: Abel Cheung <maddog@linux.org.hk>\n"
-"Language-Team: Chinese (traditional) <zh-l10n@linux.org.tw>\n"
+"PO-Revision-Date: 2019-10-20 17:28+0800\n"
+"Last-Translator: pan93412 <pan93412@gmail.com>\n"
+"Language-Team: Chinese <chinese-l10n@googlegroups.com>\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Bugs: Report translation errors to the Language-Team address.\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Lokalize 19.08.2\n"
 
 #: lib/argmatch.c:134
 #, c-format
 msgid "invalid argument %s for %s"
-msgstr ""
+msgstr "傳入 %2$s 之參數 %1$s 無效"
 
 #: lib/argmatch.c:135
 #, c-format
 msgid "ambiguous argument %s for %s"
-msgstr ""
+msgstr "傳入 %2$s 之參數 %1$s 不明確"
 
 #: lib/argmatch.c:154
 msgid "Valid arguments are:"
-msgstr ""
+msgstr "有效的參數為："
 
-#: lib/c-stack.c:208 lib/c-stack.c:301
+#: lib/argp-help.c:1889 lib/error.c:195
+msgid "Unknown system error"
+msgstr "未知系統錯誤"
+
+#: lib/c-stack.c:211 lib/c-stack.c:304 lib/c-stack.c:208 lib/c-stack.c:301
 msgid "program error"
 msgstr "程式錯誤"
 
-#: lib/c-stack.c:209 lib/c-stack.c:302
+#: lib/c-stack.c:212 lib/c-stack.c:305 lib/c-stack.c:209 lib/c-stack.c:302
 msgid "stack overflow"
-msgstr "堆疊溢位"
-
-#: lib/error.c:195
-msgid "Unknown system error"
-msgstr "不明的系統錯誤"
+msgstr "堆疊溢出"
 
 #: lib/file-type.c:40
 msgid "regular empty file"
-msgstr "普通空白檔案"
+msgstr "一般空白檔案"
 
 #: lib/file-type.c:40
 msgid "regular file"
-msgstr "普通檔案"
+msgstr "一般檔案"
 
 #: lib/file-type.c:43
 msgid "directory"
@@ -64,15 +67,15 @@ msgstr "訊息佇列"
 
 #: lib/file-type.c:55
 msgid "semaphore"
-msgstr "semaphore"
+msgstr "旗號"
 
 #: lib/file-type.c:58
 msgid "shared memory object"
-msgstr "分享記憶物件"
+msgstr "共用記憶體物件"
 
 #: lib/file-type.c:61
 msgid "typed memory object"
-msgstr "分類記憶物件"
+msgstr "具類型記憶體物件"
 
 #: lib/file-type.c:66
 msgid "block special file"
@@ -84,7 +87,7 @@ msgstr "字元特殊檔案"
 
 #: lib/file-type.c:72
 msgid "contiguous data"
-msgstr ""
+msgstr "連續資料"
 
 #: lib/file-type.c:75
 msgid "fifo"
@@ -92,47 +95,39 @@ msgstr "fifo"
 
 #: lib/file-type.c:78
 msgid "door"
-msgstr ""
+msgstr "門 (door)"
 
 #: lib/file-type.c:81
-#, fuzzy
-#| msgid "block special file"
 msgid "multiplexed block special file"
-msgstr "區塊特殊檔案"
+msgstr "多工區塊特殊檔"
 
 #: lib/file-type.c:84
-#, fuzzy
-#| msgid "character special file"
 msgid "multiplexed character special file"
-msgstr "字元特殊檔案"
+msgstr "多工字元特殊檔"
 
 #: lib/file-type.c:87
 msgid "multiplexed file"
-msgstr ""
+msgstr "多工檔案"
 
 #: lib/file-type.c:90
-#, fuzzy
-#| msgid "weird file"
 msgid "named file"
-msgstr "不尋常的檔案"
+msgstr "命名檔案"
 
 #: lib/file-type.c:93
-#, fuzzy
-#| msgid "block special file"
 msgid "network special file"
-msgstr "區塊特殊檔案"
+msgstr "網路特殊檔案"
 
 #: lib/file-type.c:96
 msgid "migrated file with data"
-msgstr ""
+msgstr "移轉檔（含資料）"
 
 #: lib/file-type.c:99
 msgid "migrated file without data"
-msgstr ""
+msgstr "移轉檔（不含資料）"
 
 #: lib/file-type.c:102
 msgid "port"
-msgstr ""
+msgstr "連線埠"
 
 #: lib/file-type.c:105
 msgid "socket"
@@ -140,53 +135,50 @@ msgstr "socket"
 
 #: lib/file-type.c:108
 msgid "whiteout"
-msgstr ""
+msgstr "whiteout"
 
 #: lib/file-type.c:110
 msgid "weird file"
-msgstr "不尋常的檔案"
+msgstr "不正常檔案"
 
 #: lib/getopt.c:278
-#, fuzzy, c-format
-#| msgid "%s: option `%s' is ambiguous\n"
+#, c-format
 msgid "%s: option '%s%s' is ambiguous\n"
-msgstr "%s：選項‘%s’是不明確的\n"
+msgstr "%s：「%s%s」選項不明確\n"
 
 #: lib/getopt.c:284
-#, fuzzy, c-format
-#| msgid "%s: option `%s' is ambiguous\n"
+#, c-format
 msgid "%s: option '%s%s' is ambiguous; possibilities:"
-msgstr "%s：選項‘%s’是不明確的\n"
+msgstr "%s：「%s%s」選項不明確；可能是："
 
 #: lib/getopt.c:319
-#, fuzzy, c-format
-#| msgid "%s: unrecognized option `%c%s'\n"
+#, c-format
 msgid "%s: unrecognized option '%s%s'\n"
-msgstr "%s：無法識別的選項‘%c%s’\n"
+msgstr "%s：無法識別「%s%s」選項\n"
 
 #: lib/getopt.c:345
-#, fuzzy, c-format
-#| msgid "%s: option `%c%s' doesn't allow an argument\n"
+#, c-format
 msgid "%s: option '%s%s' doesn't allow an argument\n"
-msgstr "%s：選項‘%c%s’不可配合參數使用\n"
+msgstr "%s：「%s%s」選項不接受參數\n"
 
 #: lib/getopt.c:360
-#, fuzzy, c-format
-#| msgid "%s: option `%s' requires an argument\n"
+#, c-format
 msgid "%s: option '%s%s' requires an argument\n"
-msgstr "%s：選項‘%s’需要參數\n"
+msgstr "%s：「%s%s」選項需要參數\n"
 
 #: lib/getopt.c:621
-#, fuzzy, c-format
-#| msgid "%s: invalid option -- %c\n"
+#, c-format
 msgid "%s: invalid option -- '%c'\n"
-msgstr "%s：無效的選項 ─ %c\n"
+msgstr "%s：無效選項 -- '%c'\n"
 
 #: lib/getopt.c:636 lib/getopt.c:682
-#, fuzzy, c-format
-#| msgid "%s: option requires an argument -- %c\n"
+#, c-format
 msgid "%s: option requires an argument -- '%c'\n"
-msgstr "%s：選項需要參數 ─ %c\n"
+msgstr "%s：選項需要參數 -- '%c'\n"
+
+#: lib/obstack.c:338 lib/obstack.c:340 lib/xalloc-die.c:34 lib/xsetenv.c:37
+msgid "memory exhausted"
+msgstr "記憶體用盡"
 
 #. TRANSLATORS:
 #. Get translations for open and closing quotation marks.
@@ -211,11 +203,11 @@ msgstr "%s：選項需要參數 ─ %c\n"
 #. and use glyphs suitable for your language.
 #: lib/quotearg.c:362
 msgid "`"
-msgstr ""
+msgstr "「"
 
 #: lib/quotearg.c:363
 msgid "'"
-msgstr ""
+msgstr "」"
 
 #: lib/regcomp.c:135
 msgid "Success"
@@ -223,57 +215,55 @@ msgstr "成功"
 
 #: lib/regcomp.c:138
 msgid "No match"
-msgstr "沒有符合的字串"
+msgstr "無符合項目"
 
 #: lib/regcomp.c:141
 msgid "Invalid regular expression"
-msgstr "不正確的正規表示式"
+msgstr "正規表示式無效"
 
 #: lib/regcomp.c:144
 msgid "Invalid collation character"
-msgstr "無效的 collation 字元"
+msgstr "定序字元無效"
 
 #: lib/regcomp.c:147
 msgid "Invalid character class name"
-msgstr "無效的字元種類名稱"
+msgstr "字元類型名稱無效"
 
 #: lib/regcomp.c:150
 msgid "Trailing backslash"
-msgstr "末端有多餘的反斜號"
+msgstr "末尾反斜線"
 
 #: lib/regcomp.c:153
 msgid "Invalid back reference"
-msgstr "無效的 back reference"
+msgstr "向後參考無效"
 
 #: lib/regcomp.c:156
-#, fuzzy
-#| msgid "Unmatched [ or [^"
 msgid "Unmatched [, [^, [:, [., or [="
-msgstr "沒有對應的 [ 或 [^"
+msgstr "不對稱的 [、[^、[:、[. 或 [="
 
 #: lib/regcomp.c:159
 msgid "Unmatched ( or \\("
-msgstr "沒有對應的 ( 或 \\("
+msgstr "不對稱的 ( 或 \\("
 
 #: lib/regcomp.c:162
 msgid "Unmatched \\{"
-msgstr "沒有對應的 \\{"
+msgstr "不對稱的 \\{"
 
 #: lib/regcomp.c:165
 msgid "Invalid content of \\{\\}"
-msgstr "\\{\\} 中的內容無效"
+msgstr "\\{\\} 中內容無效"
 
 #: lib/regcomp.c:168
 msgid "Invalid range end"
-msgstr "範圍末端字元無效"
+msgstr "結束範圍無效"
 
 #: lib/regcomp.c:171
 msgid "Memory exhausted"
-msgstr "記憶體耗盡"
+msgstr "記憶體用盡"
 
 #: lib/regcomp.c:174
 msgid "Invalid preceding regular expression"
-msgstr "之前的正規表示式無效"
+msgstr "前置正規表示式無效"
 
 #: lib/regcomp.c:177
 msgid "Premature end of regular expression"
@@ -285,188 +275,196 @@ msgstr "正規表示式過長"
 
 #: lib/regcomp.c:183
 msgid "Unmatched ) or \\)"
-msgstr "沒有對應的 ) 或 \\)"
+msgstr "不對稱的 ) 或 \\)"
 
-#: lib/regcomp.c:688
+#: lib/regcomp.c:676 lib/regcomp.c:688
 msgid "No previous regular expression"
-msgstr "之前沒有任何正規表示式"
-
-#: lib/xalloc-die.c:34
-msgid "memory exhausted"
-msgstr "記憶體耗盡"
-
-#: lib/xfreopen.c:35
-msgid "stdin"
-msgstr ""
-
-#: lib/xfreopen.c:36
-msgid "stdout"
-msgstr ""
-
-#: lib/xfreopen.c:37
-msgid "stderr"
-msgstr ""
-
-#: lib/xfreopen.c:38
-#, fuzzy
-#| msgid "Unknown system error"
-msgid "unknown stream"
-msgstr "不明的系統錯誤"
-
-#: lib/xfreopen.c:39
-#, c-format
-msgid "failed to reopen %s with mode %s"
-msgstr ""
-
-#: lib/xstrtol-error.c:63
-#, fuzzy, c-format
-#| msgid "invalid --bytes value `%s'"
-msgid "invalid %s%s argument '%s'"
-msgstr "無效的 --bytes 值 ‘%s’"
-
-#: lib/xstrtol-error.c:68
-#, c-format
-msgid "invalid suffix in %s%s argument '%s'"
-msgstr ""
-
-#: lib/xstrtol-error.c:72
-#, c-format
-msgid "%s%s argument '%s' too large"
-msgstr ""
+msgstr "沒有上一個正規表示式"
 
 #: lib/version-etc.c:73
 #, c-format
 msgid "Packaged by %s (%s)\n"
-msgstr ""
+msgstr "由 %s (%s) 打包\n"
 
 #: lib/version-etc.c:76
 #, c-format
 msgid "Packaged by %s\n"
-msgstr ""
+msgstr "由 %s 打包\n"
 
 #. TRANSLATORS: Translate "(C)" to the copyright symbol
 #. (C-in-a-circle), if this symbol is available in the user's
 #. locale.  Otherwise, do not translate "(C)"; leave it as-is.
 #: lib/version-etc.c:83
 msgid "(C)"
-msgstr ""
-
-#: lib/version-etc.c:85
-msgid ""
-"\n"
-"License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.\n"
-"This is free software: you are free to change and redistribute it.\n"
-"There is NO WARRANTY, to the extent permitted by law.\n"
-"\n"
-msgstr ""
+msgstr "(C)"
 
 #. TRANSLATORS: %s denotes an author name.
-#: lib/version-etc.c:102
+#: lib/version-etc.c:105 lib/version-etc.c:102
 #, c-format
 msgid "Written by %s.\n"
 msgstr "由 %s 編寫。\n"
 
 #. TRANSLATORS: Each %s denotes an author name.
-#: lib/version-etc.c:106
+#: lib/version-etc.c:109 lib/version-etc.c:106
 #, c-format
 msgid "Written by %s and %s.\n"
 msgstr "由 %s 和 %s 編寫。\n"
 
 #. TRANSLATORS: Each %s denotes an author name.
-#: lib/version-etc.c:110
+#: lib/version-etc.c:113 lib/version-etc.c:110
 #, c-format
 msgid "Written by %s, %s, and %s.\n"
-msgstr "由 %s, %s 和 %s 編寫。\n"
+msgstr "由 %s、%s 和 %s 編寫。\n"
 
 #. TRANSLATORS: Each %s denotes an author name.
 #. You can use line breaks, estimating that each author name occupies
 #. ca. 16 screen columns and that a screen line has ca. 80 columns.
-#: lib/version-etc.c:117
+#: lib/version-etc.c:120 lib/version-etc.c:117
 #, c-format
 msgid ""
 "Written by %s, %s, %s,\n"
 "and %s.\n"
 msgstr ""
-"由 %s, %s, %s\n"
+"由 %s、%s、%s\n"
 "和 %s 編寫。\n"
 
 #. TRANSLATORS: Each %s denotes an author name.
 #. You can use line breaks, estimating that each author name occupies
 #. ca. 16 screen columns and that a screen line has ca. 80 columns.
-#: lib/version-etc.c:124
+#: lib/version-etc.c:127 lib/version-etc.c:124
 #, c-format
 msgid ""
 "Written by %s, %s, %s,\n"
 "%s, and %s.\n"
 msgstr ""
-"由 %s, %s, %s,\n"
+"由 %s、%s、%s、\n"
 "%s 和 %s 編寫。\n"
 
 #. TRANSLATORS: Each %s denotes an author name.
 #. You can use line breaks, estimating that each author name occupies
 #. ca. 16 screen columns and that a screen line has ca. 80 columns.
-#: lib/version-etc.c:131
+#: lib/version-etc.c:134 lib/version-etc.c:131
 #, c-format
 msgid ""
 "Written by %s, %s, %s,\n"
 "%s, %s, and %s.\n"
 msgstr ""
-"由 %s, %s, %s,\n"
-"%s, %s 和 %s 編寫。\n"
+"由 %s、%s、%s、\n"
+"%s、%s 和 %s 編寫。\n"
 
 #. TRANSLATORS: Each %s denotes an author name.
 #. You can use line breaks, estimating that each author name occupies
 #. ca. 16 screen columns and that a screen line has ca. 80 columns.
-#: lib/version-etc.c:139
+#: lib/version-etc.c:142 lib/version-etc.c:139
 #, c-format
 msgid ""
 "Written by %s, %s, %s,\n"
 "%s, %s, %s, and %s.\n"
 msgstr ""
-"由 %s, %s, %s,\n"
-"%s, %s, %s 和 %s 編寫。\n"
+"由 %s、%s、%s、%s、\n"
+"%s、%s 和 %s 編寫。\n"
 
 #. TRANSLATORS: Each %s denotes an author name.
 #. You can use line breaks, estimating that each author name occupies
 #. ca. 16 screen columns and that a screen line has ca. 80 columns.
-#: lib/version-etc.c:147
+#: lib/version-etc.c:150 lib/version-etc.c:147
 #, c-format
 msgid ""
 "Written by %s, %s, %s,\n"
 "%s, %s, %s, %s,\n"
 "and %s.\n"
 msgstr ""
-"由 %s, %s, %s,\n"
-"%s, %s, %s, %s\n"
-"和 %s 編寫。\n"
+"由 %s、%s、%s、%s、\n"
+"%s、%s、%s 和 %s 編寫。\n"
 
 #. TRANSLATORS: Each %s denotes an author name.
 #. You can use line breaks, estimating that each author name occupies
 #. ca. 16 screen columns and that a screen line has ca. 80 columns.
-#: lib/version-etc.c:156
+#: lib/version-etc.c:159 lib/version-etc.c:156
 #, c-format
 msgid ""
 "Written by %s, %s, %s,\n"
 "%s, %s, %s, %s,\n"
 "%s, and %s.\n"
 msgstr ""
-"由 %s, %s, %s,\n"
-"%s, %s, %s, %s,\n"
-"%s 和 %s 編寫。\n"
+"由 %s、%s、%s、%s、\n"
+"%s、%s、%s、%s\n"
+"和 %s 編寫。\n"
 
 #. TRANSLATORS: Each %s denotes an author name.
 #. You can use line breaks, estimating that each author name occupies
 #. ca. 16 screen columns and that a screen line has ca. 80 columns.
-#: lib/version-etc.c:167
+#: lib/version-etc.c:170 lib/version-etc.c:167
 #, c-format
 msgid ""
 "Written by %s, %s, %s,\n"
 "%s, %s, %s, %s,\n"
 "%s, %s, and others.\n"
 msgstr ""
-"由 %s, %s, %s,\n"
-"%s, %s, %s, %s,\n"
-"%s 和 %s 等等編寫。\n"
+"由 %s、%s、%s、%s、\n"
+"%s、%s、%s、%s\n"
+"和 %s 等人編寫。\n"
+
+#: lib/version-etc.c:251 lib/version-etc.c:247
+#, c-format
+msgid "Report %s bugs to: %s\n"
+msgstr "請將 %s 的臭蟲匯報至：%s\n"
+
+#: lib/version-etc.c:255 lib/version-etc.c:257 lib/version-etc.c:251
+#, c-format
+msgid "%s home page: <%s>\n"
+msgstr "%s 首頁：<%s>\n"
+
+#: lib/xfreopen.c:34 lib/xfreopen.c:35
+msgid "stdin"
+msgstr "標準輸入"
+
+#: lib/xfreopen.c:35 lib/xfreopen.c:36
+msgid "stdout"
+msgstr "標準輸出"
+
+#: lib/xfreopen.c:36 lib/xfreopen.c:37
+msgid "stderr"
+msgstr "標準錯誤"
+
+#: lib/xfreopen.c:37 lib/xfreopen.c:38
+msgid "unknown stream"
+msgstr "未知串流"
+
+#: lib/xfreopen.c:38 lib/xfreopen.c:39
+#, c-format
+msgid "failed to reopen %s with mode %s"
+msgstr "無法使用 %2$s 模式重開啟 %1$s"
+
+#: lib/xstrtol-error.c:63
+#, c-format
+msgid "invalid %s%s argument '%s'"
+msgstr "%s%s 參數「%s」無效"
+
+#: lib/xstrtol-error.c:68
+#, c-format
+msgid "invalid suffix in %s%s argument '%s'"
+msgstr "%s%s 參數「%s」有無效後綴"
+
+#: lib/xstrtol-error.c:72
+#, c-format
+msgid "%s%s argument '%s' too large"
+msgstr "%s%s 參數「%s」過長"
+
+#: lib/version-etc.c:85
+msgid ""
+"\n"
+"License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl."
+"html>.\n"
+"This is free software: you are free to change and redistribute it.\n"
+"There is NO WARRANTY, to the extent permitted by law.\n"
+"\n"
+msgstr ""
+"\n"
+"GPLv3+ 授權條款：GNU GPL 第 3 版或更新版本 <https://gnu.org/licenses/gpl.html>。\n"
+"這是自由軟體：您可隨意變更及重散佈。\n"
+"在法律允許的範圍內沒有任何保障。\n"
+"\n"
 
 #. TRANSLATORS: The placeholder indicates the bug-reporting address
 #. for this package.  Please add _another line_ saying
@@ -478,25 +476,12 @@ msgid ""
 "\n"
 "Report bugs to: %s\n"
 msgstr ""
-
-#: lib/version-etc.c:247
-#, c-format
-msgid "Report %s bugs to: %s\n"
-msgstr ""
-
-#: lib/version-etc.c:251
-#, c-format
-msgid "%s home page: <%s>\n"
-msgstr ""
-
-#: lib/version-etc.c:253
-#, c-format
-msgid "%s home page: <https://www.gnu.org/software/%s/>\n"
-msgstr ""
+"\n"
+"請回報臭蟲至：%s\n"
 
 #: lib/version-etc.c:256
 msgid "General help using GNU software: <https://www.gnu.org/gethelp/>\n"
-msgstr ""
+msgstr "使用 GNU 軟體的一般說明：<https://www.gnu.org/gethelp/>\n"
 
 #: src/analyze.c:454 src/diff.c:1404
 #, c-format
@@ -520,7 +505,7 @@ msgstr "Torbjorn Granlund"
 #. This is a proper name. See the gettext manual, section Names.
 #: src/cmp.c:45
 msgid "David MacKenzie"
-msgstr ""
+msgstr "David MacKenzie"
 
 #: src/cmp.c:119 src/diff.c:877 src/diff3.c:462 src/sdiff.c:159
 #, fuzzy, c-format
@@ -539,14 +524,12 @@ msgstr "無效的 --ignore-initial 值 ‘%s’"
 msgid "options -l and -s are incompatible"
 msgstr "-l 和 -s 選項不兼容"
 
-#: src/cmp.c:155 src/diff.c:885 src/diff3.c:469 src/sdiff.c:167
-#: src/sdiff.c:315 src/sdiff.c:322 src/sdiff.c:874 src/util.c:852
-#: src/util.c:952 src/util.c:959
+#: src/cmp.c:155 src/diff.c:885 src/diff3.c:469 src/sdiff.c:167 src/sdiff.c:315
+#: src/sdiff.c:322 src/sdiff.c:874 src/util.c:852 src/util.c:952 src/util.c:959
 msgid "write failed"
 msgstr "寫入失敗"
 
-#: src/cmp.c:157 src/diff.c:887 src/diff.c:1469 src/diff3.c:471
-#: src/sdiff.c:169
+#: src/cmp.c:157 src/diff.c:887 src/diff.c:1469 src/diff3.c:471 src/sdiff.c:169
 msgid "standard output"
 msgstr "標準輸出"
 
@@ -564,7 +547,8 @@ msgstr "-i SKIP  --ignore-initial=SKIP  略過輸入資料的最初 SKIP 個位�
 
 #: src/cmp.c:163
 #, fuzzy
-#| msgid "  Skip the first SKIP1 bytes of FILE1 and the first SKIP2 bytes of FILE2."
+#| msgid ""
+#| "  Skip the first SKIP1 bytes of FILE1 and the first SKIP2 bytes of FILE2."
 msgid ""
 "-i, --ignore-initial=SKIP1:SKIP2  skip first SKIP1 bytes of FILE1 and\n"
 "                                      first SKIP2 bytes of FILE2"
@@ -572,8 +556,10 @@ msgstr "  略過 FILE1 的最初 SKIP1 個位元組和 FILE2 的最初 SKIP2 個
 
 #: src/cmp.c:165
 #, fuzzy
-#| msgid "-l  --verbose  Output byte numbers and values of all differing bytes."
-msgid "-l, --verbose              output byte numbers and differing byte values"
+#| msgid ""
+#| "-l  --verbose  Output byte numbers and values of all differing bytes."
+msgid ""
+"-l, --verbose              output byte numbers and differing byte values"
 msgstr "-l  --verbose            顯示兩者所有相異的位置和它們的位元組數值。"
 
 #: src/cmp.c:166
@@ -584,11 +570,11 @@ msgstr "-n LIMIT  --bytes=LIMIT  最多比較 LIMIT 個位元組。"
 
 #: src/cmp.c:167
 msgid "-s, --quiet, --silent      suppress all normal output"
-msgstr ""
+msgstr "-s, --quiet, --silent      隱藏所有一般輸出"
 
 #: src/cmp.c:168
 msgid "    --help                 display this help and exit"
-msgstr ""
+msgstr "    --help                 顯示此說明後離開"
 
 #: src/cmp.c:169
 #, fuzzy
@@ -614,8 +600,9 @@ msgid ""
 msgstr "SKIP1 和 SKIP2 是每個檔案會略過的位元組數目。"
 
 #: src/cmp.c:185 src/diff.c:997 src/diff3.c:509 src/sdiff.c:210
-msgid "Mandatory arguments to long options are mandatory for short options too.\n"
-msgstr ""
+msgid ""
+"Mandatory arguments to long options are mandatory for short options too.\n"
+msgstr "長選項的必選參數，對短選項亦然。\n"
 
 #: src/cmp.c:191
 msgid ""
@@ -692,27 +679,27 @@ msgstr "cmp：%s 已結束\n"
 #. This is a proper name. See the gettext manual, section Names.
 #: src/diff.c:50
 msgid "Paul Eggert"
-msgstr ""
+msgstr "Paul Eggert"
 
 #. This is a proper name. See the gettext manual, section Names.
 #: src/diff.c:51
 msgid "Mike Haertel"
-msgstr ""
+msgstr "Mike Haertel"
 
 #. This is a proper name. See the gettext manual, section Names.
 #: src/diff.c:52
 msgid "David Hayes"
-msgstr ""
+msgstr "David Hayes"
 
 #. This is a proper name. See the gettext manual, section Names.
 #: src/diff.c:53
 msgid "Richard Stallman"
-msgstr ""
+msgstr "Richard Stallman"
 
 #. This is a proper name. See the gettext manual, section Names.
 #: src/diff.c:54
 msgid "Len Tower"
-msgstr ""
+msgstr "Len Tower"
 
 #: src/diff.c:353
 #, fuzzy, c-format
@@ -779,13 +766,15 @@ msgid "-s, --report-identical-files  report when two files are the same"
 msgstr "-s  --report-identical-files   當兩個檔案一樣時仍然顯示結果。"
 
 #: src/diff.c:894
-msgid "-c, -C NUM, --context[=NUM]   output NUM (default 3) lines of copied context"
-msgstr ""
+msgid ""
+"-c, -C NUM, --context[=NUM]   output NUM (default 3) lines of copied context"
+msgstr "-c, -C NUM, --context[=NUM]   輸出 NUM (預設 3) 行複製上下文 (copied context)"
 
 #: src/diff.c:895
 #, fuzzy
 #| msgid "-w NUM  --width=NUM  Output at most NUM (default 130) print columns."
-msgid "-u, -U NUM, --unified[=NUM]   output NUM (default 3) lines of unified context"
+msgid ""
+"-u, -U NUM, --unified[=NUM]   output NUM (default 3) lines of unified context"
 msgstr "-w NUM  --width=NUM         每行顯示最多 NUM（預設 130）個字元。"
 
 #: src/diff.c:896
@@ -802,18 +791,20 @@ msgstr "-n  --rcs    以 RCS diff 格式輸出。"
 
 #: src/diff.c:898
 msgid "-y, --side-by-side            output in two columns"
-msgstr ""
+msgstr "-y, --side-by-side            輸出成兩列"
 
 #: src/diff.c:899
 #, fuzzy
 #| msgid "-w NUM  --width=NUM  Output at most NUM (default 130) print columns."
-msgid "-W, --width=NUM               output at most NUM (default 130) print columns"
+msgid ""
+"-W, --width=NUM               output at most NUM (default 130) print columns"
 msgstr "-w NUM  --width=NUM         每行顯示最多 NUM（預設 130）個字元。"
 
 #: src/diff.c:900
 #, fuzzy
 #| msgid "-l  --left-column  Output only the left column of common lines."
-msgid "    --left-column             output only the left column of common lines"
+msgid ""
+"    --left-column             output only the left column of common lines"
 msgstr "-l  --left-column           當有兩行相同時只顯示左邊的一行。"
 
 #: src/diff.c:901
@@ -824,17 +815,17 @@ msgstr "-s  --suppress-common-lines  當有兩行相同時不會顯示。"
 
 #: src/diff.c:903
 msgid "-p, --show-c-function         show which C function each change is in"
-msgstr ""
+msgstr "-p, --show-c-function         顯示 C 函數變更的地方"
 
 #: src/diff.c:904
 msgid "-F, --show-function-line=RE   show the most recent line matching RE"
-msgstr ""
+msgstr "-F, --show-function-line=RE   顯示最接近符合 RE 的行"
 
 #: src/diff.c:905
 msgid ""
 "    --label LABEL             use LABEL instead of file name and timestamp\n"
 "                                (can be repeated)"
-msgstr ""
+msgstr "    --label 標籤              使用 <標籤> 而不用檔名及時間戳 (可以重複)"
 
 #: src/diff.c:908
 #, fuzzy
@@ -851,12 +842,14 @@ msgstr "-T  --initial-tab        每行先加上 tab 字元，使 tab 字元可�
 #: src/diff.c:910
 #, fuzzy
 #| msgid "--tabsize=NUM  Tab stops are every NUM (default 8) print columns."
-msgid "    --tabsize=NUM             tab stops every NUM (default 8) print columns"
+msgid ""
+"    --tabsize=NUM             tab stops every NUM (default 8) print columns"
 msgstr "--tabsize=NUM            定位字元 (tab) 的寬度，預設為 8 個空格。"
 
 #: src/diff.c:911
-msgid "    --suppress-blank-empty    suppress space or tab before empty output lines"
-msgstr ""
+msgid ""
+"    --suppress-blank-empty    suppress space or tab before empty output lines"
+msgstr "    --suppress-blank-empty    隱藏每個空輸出行前的空白及 Tab"
 
 #: src/diff.c:912
 #, fuzzy
@@ -867,12 +860,13 @@ msgstr "-l  --paginate           將輸出送至‘pr’指令來分頁。"
 #: src/diff.c:914
 #, fuzzy
 #| msgid "-r  --recursive  Recursively compare any subdirectories found."
-msgid "-r, --recursive                 recursively compare any subdirectories found"
+msgid ""
+"-r, --recursive                 recursively compare any subdirectories found"
 msgstr "-r  --recursive                連同所有副目錄一起比較。"
 
 #: src/diff.c:915
 msgid "    --no-dereference            don't follow symbolic links"
-msgstr ""
+msgstr "    --no-dereference            不追蹤符號連結"
 
 #: src/diff.c:916
 #, fuzzy
@@ -906,19 +900,26 @@ msgstr "-x PAT  --exclude=PAT          排除樣式為 PAT 的檔案。"
 
 #: src/diff.c:921
 #, fuzzy
-#| msgid "-X FILE  --exclude-from=FILE  Exclude files that match any pattern in FILE."
-msgid "-X, --exclude-from=FILE         exclude files that match any pattern in FILE"
+#| msgid ""
+#| "-X FILE  --exclude-from=FILE  Exclude files that match any pattern in "
+#| "FILE."
+msgid ""
+"-X, --exclude-from=FILE         exclude files that match any pattern in FILE"
 msgstr "-X FILE  --exclude-from=FILE   排除所有在 FILE 中列出的樣式的檔案。"
 
 #: src/diff.c:922
 #, fuzzy
-#| msgid "-S FILE  --starting-file=FILE  Start with FILE when comparing directories."
-msgid "-S, --starting-file=FILE        start with FILE when comparing directories"
+#| msgid ""
+#| "-S FILE  --starting-file=FILE  Start with FILE when comparing directories."
+msgid ""
+"-S, --starting-file=FILE        start with FILE when comparing directories"
 msgstr "-S FILE  --starting-file=FILE  當比較目錄時，由 FILE 開始比較。"
 
 #: src/diff.c:923
 #, fuzzy
-#| msgid "--from-file=FILE1  Compare FILE1 to all operands.  FILE1 can be a directory."
+#| msgid ""
+#| "--from-file=FILE1  Compare FILE1 to all operands.  FILE1 can be a "
+#| "directory."
 msgid ""
 "    --from-file=FILE1           compare FILE1 to all operands;\n"
 "                                  FILE1 can be a directory"
@@ -926,7 +927,8 @@ msgstr "--from-file=FILE1  將 FILE1 和參數中的所有檔案/目錄作比較
 
 #: src/diff.c:925
 #, fuzzy
-#| msgid "--to-file=FILE2  Compare all operands to FILE2.  FILE2 can be a directory."
+#| msgid ""
+#| "--to-file=FILE2  Compare all operands to FILE2.  FILE2 can be a directory."
 msgid ""
 "    --to-file=FILE2             compare all operands to FILE2;\n"
 "                                  FILE2 can be a directory"
@@ -935,7 +937,8 @@ msgstr "--to-file=FILE2    將參數中的所有檔案/目錄和 FILE2 作比較
 #: src/diff.c:928
 #, fuzzy
 #| msgid "-i  --ignore-case  Ignore case differences in file contents."
-msgid "-i, --ignore-case               ignore case differences in file contents"
+msgid ""
+"-i, --ignore-case               ignore case differences in file contents"
 msgstr "-i  --ignore-case           不分辨檔案內容中的大小寫。"
 
 #: src/diff.c:929
@@ -952,8 +955,10 @@ msgstr "-w  --ignore-all-space      忽略所有空白字元。"
 
 #: src/diff.c:931
 #, fuzzy
-#| msgid "-b  --ignore-space-change  Ignore changes in the amount of white space."
-msgid "-b, --ignore-space-change       ignore changes in the amount of white space"
+#| msgid ""
+#| "-b  --ignore-space-change  Ignore changes in the amount of white space."
+msgid ""
+"-b, --ignore-space-change       ignore changes in the amount of white space"
 msgstr "-b  --ignore-space-change   忽略因空白字元數目不同而造成的差異。"
 
 #: src/diff.c:932
@@ -965,12 +970,15 @@ msgstr "-w  --ignore-all-space      忽略所有空白字元。"
 #: src/diff.c:933
 #, fuzzy
 #| msgid "-B  --ignore-blank-lines  Ignore changes whose lines are all blank."
-msgid "-B, --ignore-blank-lines        ignore changes where lines are all blank"
+msgid ""
+"-B, --ignore-blank-lines        ignore changes where lines are all blank"
 msgstr "-B  --ignore-blank-lines    忽略任何因空行而造成的差異。"
 
 #: src/diff.c:934
 #, fuzzy
-#| msgid "-I RE  --ignore-matching-lines=RE  Ignore changes whose lines all match RE."
+#| msgid ""
+#| "-I RE  --ignore-matching-lines=RE  Ignore changes whose lines all match "
+#| "RE."
 msgid "-I, --ignore-matching-lines=RE  ignore changes where all lines match RE"
 msgstr "-I RE  --ignore-matching-lines=RE  忽略任何符合指定的<正規表示式>的地方。"
 
@@ -994,13 +1002,17 @@ msgstr "--binary                 以二元碼檔模式讀寫資料。"
 
 #: src/diff.c:942
 #, fuzzy
-#| msgid "-D NAME  --ifdef=NAME  Output merged file to show `#ifdef NAME' diffs."
-msgid "-D, --ifdef=NAME                output merged file with '#ifdef NAME' diffs"
+#| msgid ""
+#| "-D NAME  --ifdef=NAME  Output merged file to show `#ifdef NAME' diffs."
+msgid ""
+"-D, --ifdef=NAME                output merged file with '#ifdef NAME' diffs"
 msgstr "-D NAME  --ifdef=NAME      輸出的資料以‘#ifdef NAME’方式標明差異。"
 
 #: src/diff.c:943
 #, fuzzy
-#| msgid "--GTYPE-group-format=GFMT  Similar, but format GTYPE input groups with GFMT."
+#| msgid ""
+#| "--GTYPE-group-format=GFMT  Similar, but format GTYPE input groups with "
+#| "GFMT."
 msgid "    --GTYPE-group-format=GFMT   format GTYPE input groups with GFMT"
 msgstr "--GTYPE-group-format=GFMT  效果類似，但會以 GFMT 格式處理 GTYPE 輸入行組。"
 
@@ -1012,7 +1024,8 @@ msgstr "--line-format=LFMT         效果類似，但會以 LFMT 格式處理每
 
 #: src/diff.c:945
 #, fuzzy
-#| msgid "--LTYPE-line-format=LFMT  Similar, but format LTYPE input lines with LFMT."
+#| msgid ""
+#| "--LTYPE-line-format=LFMT  Similar, but format LTYPE input lines with LFMT."
 msgid "    --LTYPE-line-format=LFMT    format LTYPE input lines with LFMT"
 msgstr "--LTYPE-line-format=LFMT   效果類似，但會以 LFMT 格式處理 LTYPE 輸入行組。"
 
@@ -1020,11 +1033,12 @@ msgstr "--LTYPE-line-format=LFMT   效果類似，但會以 LFMT 格式處理 LT
 msgid ""
 "  These format options provide fine-grained control over the output\n"
 "    of diff, generalizing -D/--ifdef."
-msgstr ""
+msgstr "  這些格式化選項提供了微調 diff 輸出的選項，使 -D/--if-def 一般化。"
 
 #: src/diff.c:948
 #, fuzzy
-#| msgid "  LTYPE is `old', `new', or `unchanged'.  GTYPE is LTYPE or `changed'."
+#| msgid ""
+#| "  LTYPE is `old', `new', or `unchanged'.  GTYPE is LTYPE or `changed'."
 msgid "  LTYPE is 'old', 'new', or 'unchanged'.  GTYPE is LTYPE or 'changed'."
 msgstr ""
 "  LTYPE 可以是‘old’、‘new’或‘unchanged’。GTYPE 可以是 LTYPE 的選擇\n"
@@ -1121,25 +1135,34 @@ msgstr "--horizon-lines=NUM      (此選項不作處理)"
 
 #: src/diff.c:973
 #, fuzzy
-#| msgid "-H  --speed-large-files  Assume large files and many scattered small changes."
-msgid "    --speed-large-files  assume large files and many scattered small changes"
+#| msgid ""
+#| "-H  --speed-large-files  Assume large files and many scattered small "
+#| "changes."
+msgid ""
+"    --speed-large-files  assume large files and many scattered small changes"
 msgstr "-H  --speed-large-files  假設檔案十分大而且當中含有許多些微的差異。"
 
 #: src/diff.c:974
 msgid ""
-"    --color[=WHEN]       colorize the output; WHEN can be 'never', 'always',\n"
+"    --color[=WHEN]       colorize the output; WHEN can be 'never', "
+"'always',\n"
 "                           or 'auto' (the default)"
 msgstr ""
+"    --color[=WHEN]       對輸出上色；WHEN 可以是 'never'、\n"
+"                         'always' 或 'auto' (預設值)"
 
 #: src/diff.c:976
 msgid ""
-"    --palette=PALETTE    the colors to use when --color is active; PALETTE is\n"
+"    --palette=PALETTE    the colors to use when --color is active; PALETTE "
+"is\n"
 "                           a colon-separated list of terminfo capabilities"
 msgstr ""
+"    --palette=調色盤     啟用 --color 後要用的顏色；<調色盤> 是使用\n"
+"                         冒號 (:) 分隔的 terminfo 功能 (capabilities)\n"
 
 #: src/diff.c:979
 msgid "    --help               display this help and exit"
-msgstr ""
+msgstr "    --help               顯示此說明後離開"
 
 #: src/diff.c:980
 #, fuzzy
@@ -1149,7 +1172,8 @@ msgstr "-v  --version            顯示版本資訊。"
 
 #: src/diff.c:982
 #, fuzzy
-#| msgid "FILES are `FILE1 FILE2' or `DIR1 DIR2' or `DIR FILE...' or `FILE... DIR'."
+#| msgid ""
+#| "FILES are `FILE1 FILE2' or `DIR1 DIR2' or `DIR FILE...' or `FILE... DIR'."
 msgid "FILES are 'FILE1 FILE2' or 'DIR1 DIR2' or 'DIR FILE' or 'FILE DIR'."
 msgstr ""
 "FILES 的格式可以是‘FILE1 FILE2’、‘DIR1 DIR2’、‘DIR FILE...’或\n"
@@ -1157,8 +1181,10 @@ msgstr ""
 
 #: src/diff.c:983
 #, fuzzy
-#| msgid "If --from-file or --to-file is given, there are no restrictions on FILES."
-msgid "If --from-file or --to-file is given, there are no restrictions on FILE(s)."
+#| msgid ""
+#| "If --from-file or --to-file is given, there are no restrictions on FILES."
+msgid ""
+"If --from-file or --to-file is given, there are no restrictions on FILE(s)."
 msgstr "如果使用 --from-file 或 --to-file 選項，FILES 的格式則不受限制。"
 
 #: src/diff.c:984 src/diff3.c:528 src/sdiff.c:219
@@ -1235,7 +1261,7 @@ msgstr "檔案 %s 和 %s 相同\n"
 #. This is a proper name. See the gettext manual, section Names.
 #: src/diff3.c:42
 msgid "Randy Smith"
-msgstr ""
+msgstr "Randy Smith"
 
 #: src/diff3.c:351
 #, c-format
@@ -1261,7 +1287,8 @@ msgstr "-A  --show-all       顯示所有要更改的部份，並括上互相抵
 
 #: src/diff3.c:477
 #, fuzzy
-#| msgid "-e  --ed  Output unmerged changes from OLDFILE to YOURFILE into MYFILE."
+#| msgid ""
+#| "-e  --ed  Output unmerged changes from OLDFILE to YOURFILE into MYFILE."
 msgid ""
 "-e, --ed                    output ed script incorporating changes\n"
 "                                from OLDFILE to YOURFILE into MYFILE"
@@ -1278,18 +1305,21 @@ msgstr "-E  --show-overlap   顯示未合併的更改部份，並括上互相抵
 #: src/diff3.c:480
 #, fuzzy
 #| msgid "-3  --easy-only  Output unmerged nonoverlapping changes."
-msgid "-3, --easy-only             like -e, but incorporate only nonoverlapping changes"
+msgid ""
+"-3, --easy-only             like -e, but incorporate only nonoverlapping "
+"changes"
 msgstr "-3  --easy-only      顯示未合併而且不重疊的更改部份。"
 
 #: src/diff3.c:481
 #, fuzzy
 #| msgid "-x  --overlap-only  Output overlapping changes."
-msgid "-x, --overlap-only          like -e, but incorporate only overlapping changes"
+msgid ""
+"-x, --overlap-only          like -e, but incorporate only overlapping changes"
 msgstr "-x  --overlap-only   只顯示重疊的更改部份。"
 
 #: src/diff3.c:482
 msgid "-X                          like -x, but bracket conflicts"
-msgstr ""
+msgstr "-X                          類似 -x 但會將衝突處用括號括起"
 
 #: src/diff3.c:483
 #, fuzzy
@@ -1302,6 +1332,8 @@ msgid ""
 "-m, --merge                 output actual merged file, according to\n"
 "                                -A if no other options are given"
 msgstr ""
+"-m, --merge                 輸出實際合併的檔案，\n"
+"                                如果未提供其他選項則根據 -A"
 
 #: src/diff3.c:488
 #, fuzzy
@@ -1332,10 +1364,12 @@ msgid ""
 "-L, --label=LABEL           use LABEL instead of file name\n"
 "                                (can be repeated up to three times)"
 msgstr ""
+"-L, --label=標籤            使用 <標籤> 而非檔名\n"
+"                                (可重複使用三次)"
 
 #: src/diff3.c:495
 msgid "    --help                  display this help and exit"
-msgstr ""
+msgstr "    --help                  顯示此說明後離開"
 
 #: src/diff3.c:496
 #, fuzzy
@@ -1418,23 +1452,26 @@ msgstr "無法比較檔案 ‘%s’ 和 ‘%s’"
 #: src/dir.c:225
 #, c-format
 msgid "%s: recursive directory loop"
-msgstr ""
+msgstr "%s：遞迴目錄循環"
 
 #. This is a proper name. See the gettext manual, section Names.
 #: src/sdiff.c:43
 msgid "Thomas Lord"
-msgstr ""
+msgstr "Thomas Lord"
 
 #: src/sdiff.c:173
 #, fuzzy
-#| msgid "-o FILE  --output=FILE  Operate interactively, sending output to FILE."
-msgid "-o, --output=FILE            operate interactively, sending output to FILE"
+#| msgid ""
+#| "-o FILE  --output=FILE  Operate interactively, sending output to FILE."
+msgid ""
+"-o, --output=FILE            operate interactively, sending output to FILE"
 msgstr "-o 檔案  --output=檔案      互動式操作，並將結果寫入至<檔案>。"
 
 #: src/sdiff.c:175
 #, fuzzy
 #| msgid "-i  --ignore-case  Consider upper- and lower-case to be the same."
-msgid "-i, --ignore-case            consider upper- and lower-case to be the same"
+msgid ""
+"-i, --ignore-case            consider upper- and lower-case to be the same"
 msgstr "-i  --ignore-case           不分辨檔案內容中的大小寫。"
 
 #: src/sdiff.c:176
@@ -1451,8 +1488,10 @@ msgstr "-w  --ignore-all-space      忽略所有空白字元。"
 
 #: src/sdiff.c:178
 #, fuzzy
-#| msgid "-b  --ignore-space-change  Ignore changes in the amount of white space."
-msgid "-b, --ignore-space-change    ignore changes in the amount of white space"
+#| msgid ""
+#| "-b  --ignore-space-change  Ignore changes in the amount of white space."
+msgid ""
+"-b, --ignore-space-change    ignore changes in the amount of white space"
 msgstr "-b  --ignore-space-change   忽略因空白字元數目不同而造成的差異。"
 
 #: src/sdiff.c:179
@@ -1469,7 +1508,9 @@ msgstr "-B  --ignore-blank-lines    忽略任何因空行而造成的差異。"
 
 #: src/sdiff.c:181
 #, fuzzy
-#| msgid "-I RE  --ignore-matching-lines=RE  Ignore changes whose lines all match RE."
+#| msgid ""
+#| "-I RE  --ignore-matching-lines=RE  Ignore changes whose lines all match "
+#| "RE."
 msgid "-I, --ignore-matching-lines=RE  ignore changes all whose lines match RE"
 msgstr "-I RE  --ignore-matching-lines=RE  忽略任何符合指定的<正規表示式>的地方。"
 
@@ -1488,13 +1529,15 @@ msgstr "-a  --text               所有檔案都以文字檔方式處理。"
 #: src/sdiff.c:185
 #, fuzzy
 #| msgid "-w NUM  --width=NUM  Output at most NUM (default 130) print columns."
-msgid "-w, --width=NUM              output at most NUM (default 130) print columns"
+msgid ""
+"-w, --width=NUM              output at most NUM (default 130) print columns"
 msgstr "-w NUM  --width=NUM         每行顯示最多 NUM（預設 130）個字元。"
 
 #: src/sdiff.c:186
 #, fuzzy
 #| msgid "-l  --left-column  Output only the left column of common lines."
-msgid "-l, --left-column            output only the left column of common lines"
+msgid ""
+"-l, --left-column            output only the left column of common lines"
 msgstr "-l  --left-column           當有兩行相同時只顯示左邊的一行。"
 
 #: src/sdiff.c:187
@@ -1512,7 +1555,8 @@ msgstr "-t  --expand-tabs        將輸出中的 tab 換成空格。"
 #: src/sdiff.c:190
 #, fuzzy
 #| msgid "--tabsize=NUM  Tab stops are every NUM (default 8) print columns."
-msgid "    --tabsize=NUM            tab stops at every NUM (default 8) print columns"
+msgid ""
+"    --tabsize=NUM            tab stops at every NUM (default 8) print columns"
 msgstr "--tabsize=NUM            定位字元 (tab) 的寬度，預設為 8 個空格。"
 
 #: src/sdiff.c:192
@@ -1523,8 +1567,11 @@ msgstr "-d  --minimal            盡可能找出最小的差異。"
 
 #: src/sdiff.c:193
 #, fuzzy
-#| msgid "-H  --speed-large-files  Assume large files and many scattered small changes."
-msgid "-H, --speed-large-files      assume large files, many scattered small changes"
+#| msgid ""
+#| "-H  --speed-large-files  Assume large files and many scattered small "
+#| "changes."
+msgid ""
+"-H, --speed-large-files      assume large files, many scattered small changes"
 msgstr "-H  --speed-large-files  假設檔案十分大而且當中含有許多些微的差異。"
 
 #: src/sdiff.c:194
@@ -1535,7 +1582,7 @@ msgstr "--diff-program=程式      使用<程式>來比較檔案。"
 
 #: src/sdiff.c:196
 msgid "    --help                   display this help and exit"
-msgstr ""
+msgstr "    --help                   顯示此說明後離開"
 
 #: src/sdiff.c:197
 #, fuzzy
@@ -1607,132 +1654,21 @@ msgstr "%s：無法識別的選項‘--%s’\n"
 #: src/util.c:692
 #, c-format
 msgid "unparsable value for --palette"
-msgstr ""
+msgstr "無法解析傳入 --palette 的值"
 
-#~ msgid "%s: option `--%s' doesn't allow an argument\n"
-#~ msgstr "%s：選項‘--%s’不可配合參數使用\n"
+#: lib/version-etc.c:253
+#, c-format
+msgid "%s home page: <https://www.gnu.org/software/%s/>\n"
+msgstr "%s 首頁：<https://www.gnu.org/software/%s/>\n"
 
-#~ msgid "%s: illegal option -- %c\n"
-#~ msgstr "%s：不合法的選項 ─ %c\n"
+msgid "%s: option `--%s' doesn't allow an argument\n"
+msgstr "%s：選項‘--%s’不可配合參數使用\n"
 
-#~ msgid "%s: option `-W %s' is ambiguous\n"
-#~ msgstr "%s：選項‘-W %s’是不明確的\n"
+msgid "%s: illegal option -- %c\n"
+msgstr "%s：不合法的選項 ─ %c\n"
 
-#~ msgid "%s: option `-W %s' doesn't allow an argument\n"
-#~ msgstr "%s：選項‘-W %s’不可配合參數使用\n"
+msgid "%s: option `-W %s' is ambiguous\n"
+msgstr "%s：選項‘-W %s’不明確\n"
 
-#~ msgid ""
-#~ "This is free software; see the source for copying conditions.  There is NO\n"
-#~ "warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
-#~ msgstr ""
-#~ "本程式是自由軟體；請參考源代碼中的版權聲明。本軟體不提供任何保證，甚至不會\n"
-#~ "包括可售性或適用於任何特定目的的保證。\n"
-
-#~ msgid "-i SKIP1:SKIP2  --ignore-initial=SKIP1:SKIP2"
-#~ msgstr "-i SKIP1:SKIP2  --ignore-initial=SKIP1:SKIP2"
-
-#~ msgid "-s  --quiet  --silent  Output nothing; yield exit status only."
-#~ msgstr "-s  --quiet  --silent    不輸出任何資訊；只產生回傳值。"
-
-#~ msgid "--help  Output this help."
-#~ msgstr "--help                   顯示此求助說明。"
-
-#~ msgid "Report bugs to <bug-gnu-utils@gnu.org>."
-#~ msgstr "請向 <bug-gnu-utils@gnu.org> 回報錯誤。"
-
-#~ msgid "`-%ld' option is obsolete; use `-%c %ld'"
-#~ msgstr "‘-%ld’ 選項已過時；請使用 ‘-%c %ld’"
-
-#~ msgid "`-%ld' option is obsolete; omit it"
-#~ msgstr "‘-%ld’ 選項已過時；會忽略此選項"
-
-#~ msgid ""
-#~ "-c  -C NUM  --context[=NUM]  Output NUM (default 3) lines of copied context.\n"
-#~ "-u  -U NUM  --unified[=NUM]  Output NUM (default 3) lines of unified context.\n"
-#~ "  --label LABEL  Use LABEL instead of file name.\n"
-#~ "  -p  --show-c-function  Show which C function each change is in.\n"
-#~ "  -F RE  --show-function-line=RE  Show the most recent line matching RE."
-#~ msgstr ""
-#~ "-c  -C 行數  --context[=行數]  顯示指定<行數>(預設 3 行)copied 格式的上下文\n"
-#~ "-u  -U 行數  --unified[=行數]  顯示指定<行數>(預設 3 行)unified 格式的上下文\n"
-#~ "   --label 標籤                    使用<標籤>代替檔案名稱。\n"
-#~ "   -p  --show-c-function           顯示和每個差異有關的 C 函式名稱。\n"
-#~ "   -F RE  --show-function-line=RE  顯示最接近而符合<正規表示式>的一行。"
-
-#~ msgid ""
-#~ "-y  --side-by-side  Output in two columns.\n"
-#~ "  -W NUM  --width=NUM  Output at most NUM (default 130) print columns.\n"
-#~ "  --left-column  Output only the left column of common lines.\n"
-#~ "  --suppress-common-lines  Do not output common lines."
-#~ msgstr ""
-#~ "-y  --side-by-side         以兩列並排的方式顯示。\n"
-#~ "  -W NUM  --width=NUM      每行顯示最多 NUM (預設 130) 個字元。\n"
-#~ "  --left-column            當有兩行相同時只顯示左邊的一行。\n"
-#~ "  --suppress-common-lines  當有兩行相同時不會顯示。"
-
-#~ msgid "--speed-large-files  Assume large files and many scattered small changes."
-#~ msgstr "--speed-large-files      假設檔案十分大而且當中含有許多些微的差異。"
-
-#~ msgid "-X  Output overlapping changes, bracketing them."
-#~ msgstr "-X                   顯示重疊的更改部份，並括上記號。"
-
-#~ msgid "-m  --merge  Output merged file instead of ed script (default -A)."
-#~ msgstr "-m  --merge          顯示合併後的檔案而不是 ed script (預設加上 -A)。"
-
-#~ msgid "-L LABEL  --label=LABEL  Use LABEL instead of file name."
-#~ msgstr "-L 標籤  --label=標籤    以<標籤>代替檔案名稱。"
-
-#~ msgid "subsidiary program `%s' not found"
-#~ msgstr "找不到子程式 ‘%s’"
-
-#~ msgid "subsidiary program `%s' failed"
-#~ msgstr "程式 ‘%s’ 回傳錯誤"
-
-#~ msgid "subsidiary program `%s' failed (exit status %d)"
-#~ msgstr "子程式 ‘%s’ 發生錯誤 (回傳值為 %d)"
-
-#~ msgid ""
-#~ "This program comes with NO WARRANTY, to the extent permitted by law.\n"
-#~ "You may redistribute copies of this program\n"
-#~ "under the terms of the GNU General Public License.\n"
-#~ "For more information about these matters, see the files named COPYING."
-#~ msgstr ""
-#~ "此軟體在法律允許的限度之下不附帶任何保證。你可以根據 GNU General Public\n"
-#~ "License 中的條款重新散佈此軟體。詳情請參考檔案 COPYING。"
-
-#~ msgid "Written by Torbjorn Granlund and David MacKenzie."
-#~ msgstr "由 Torbjorn Granlund 及 David MacKenzie 編寫。"
-
-#~ msgid ""
-#~ "Written by Paul Eggert, Mike Haertel, David Hayes,\n"
-#~ "Richard Stallman, and Len Tower."
-#~ msgstr ""
-#~ "由 Paul Eggert、Mike Haertel、David Hayes、\n"
-#~ "Richard Stallman 和 Len Tower 編寫。"
-
-#~ msgid "subsidiary program `%s' not executable"
-#~ msgstr "所需的程式‘%s’無法執行"
-
-#~ msgid "--inhibit-hunk-merge  Do not merge hunks."
-#~ msgstr "--inhibit-hunk-merge     (此選項不作處理)"
-
-#~ msgid "SKIP values may be followed by the following multiplicative suffixes:\n"
-#~ msgstr "SKIP 值可以加上以下的單位：\n"
-
-#~ msgid "kB 1000, K 1024, MB 1,000,000, M 1,048,576,\n"
-#~ msgstr "kB 1000、K 1024、MB 1,000,000、M 1,048,576、\n"
-
-#~ msgid "GB 1,000,000,000, G 1,073,741,824, and so on for T, P, E, Z, Y.\n"
-#~ msgstr "GB 1,000,000,000、G 1,073,741,824、還有 T、P、E、Z、Y 如此類推。\n"
-
-#~ msgid "multiple `--from-file' options"
-#~ msgstr "‘--from-file’選項不可使用多於一次"
-
-#~ msgid "multiple `--to-file' options"
-#~ msgstr "‘--to-file’選項不可使用多於一次"
-
-#~ msgid "regular executable file"
-#~ msgstr "正常可執行檔"
-
-#~ msgid "If a FILE is `-', read standard input.\n"
-#~ msgstr "如果檔案是‘-’，則由標準輸入讀入資料。\n"
+msgid "%s: option `-W %s' doesn't allow an argument\n"
+msgstr "%s：選項‘-W %s’不可配合參數使用\n"
