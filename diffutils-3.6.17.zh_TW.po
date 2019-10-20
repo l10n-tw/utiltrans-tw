@@ -1,5 +1,6 @@
 # traditional Chinese translation of diffutils.
 # Copyright (C) 2002, 2005 Free Software Foundation, Inc.
+# This file is distributed under the same license as the diffutils package.
 #
 # Abel Cheung <maddog@linux.org.hk>, 2002, 2005.
 # pan93412 <pan93412@gmail.com>, 2019.
