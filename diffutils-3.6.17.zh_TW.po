@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: diffutils 2.8.7\n"
 "Report-Msgid-Bugs-To: bug-diffutils@gnu.org\n"
 "POT-Creation-Date: 2018-12-26 14:31-0800\n"
-"PO-Revision-Date: 2019-10-20 23:48+0800\n"
+"PO-Revision-Date: 2019-10-21 01:31+0800\n"
 "Last-Translator: pan93412 <pan93412@gmail.com>\n"
 "Language-Team: Chinese <chinese-l10n@googlegroups.com>\n"
 "Language: zh_TW\n"
@@ -727,13 +727,13 @@ msgstr "出現互相抵觸的寬度選項"
 #, c-format
 #| msgid "invalid horizon length `%s'"
 msgid "invalid horizon length '%s'"
-msgstr "無效的水平長度 「%s」"
+msgstr "無效的水平長度「%s」"
 
 #: src/diff.c:613
 #, c-format
 #| msgid "invalid tabsize `%s'"
 msgid "invalid tabsize '%s'"
-msgstr "無效的定位字元寬度 「%s」"
+msgstr "無效的定位字元寬度「%s」"
 
 #: src/diff.c:617
 msgid "conflicting tabsize options"
@@ -751,7 +751,7 @@ msgstr "    --normal                  輸出一般 diff (預設值)"
 #: src/diff.c:892
 #| msgid "-q  --brief  Output only whether files differ."
 msgid "-q, --brief                   report only when files differ"
-msgstr "-q, --brief                   僅在檔案不同時輸出"
+msgstr "-q, --brief                   僅在檔案不同時回報"
 
 #: src/diff.c:893
 #| msgid "-s  --report-identical-files  Report when two files are the same."
@@ -761,7 +761,7 @@ msgstr "-s, --report-identical-files  當兩個檔案一樣時仍然顯示結果
 #: src/diff.c:894
 msgid ""
 "-c, -C NUM, --context[=NUM]   output NUM (default 3) lines of copied context"
-msgstr "-c, -C NUM, --context[=NUM]   輸出 NUM (預設 3) 行複製上下文 (copied context)"
+msgstr "-c, -C NUM, --context[=NUM]   輸出 NUM (預設 3) 行複製 (copied) 上下文"
 
 #: src/diff.c:895
 #| msgid "-w NUM  --width=NUM  Output at most NUM (default 130) print columns."
@@ -943,9 +943,7 @@ msgstr "-w, --ignore-all-space          忽略所有空白"
 #| msgid "-B  --ignore-blank-lines  Ignore changes whose lines are all blank."
 msgid ""
 "-B, --ignore-blank-lines        ignore changes where lines are all blank"
-msgstr ""
-"-B, --ignore-blank-lines        忽略空行的變更ignore changes where lines are all"
-" blank"
+msgstr "-B, --ignore-blank-lines        忽略空行的變更"
 
 #: src/diff.c:934
 #| msgid ""
@@ -1455,7 +1453,7 @@ msgstr "    --strip-trailing-cr      去除輸入資料每行末端的 carriage 
 #: src/sdiff.c:183
 #| msgid "-a  --text  Treat all files as text."
 msgid "-a, --text                   treat all files as text"
-msgstr "-a, --text                   將所有檔案皆以文字檔方式處理。"
+msgstr "-a, --text                   將所有檔案依文字檔處理"
 
 #: src/sdiff.c:185
 #| msgid "-w NUM  --width=NUM  Output at most NUM (default 130) print columns."

@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: findutils 4.5.15\n"
 "Report-Msgid-Bugs-To: bug-findutils@gnu.org\n"
 "POT-Creation-Date: 2015-12-18 14:45+0000\n"
-"PO-Revision-Date: 2019-10-21 01:15+0800\n"
+"PO-Revision-Date: 2019-10-21 01:32+0800\n"
 "Last-Translator: pan93412 <pan93412@gmail.com>\n"
 "Language-Team: Chinese <chinese-l10n@googlegroups.com>\n"
 "Language: zh_TW\n"
@@ -575,7 +575,7 @@ msgstr ""
 #: find/parser.c:1447
 #, c-format
 msgid "Expected a positive decimal integer argument to %s, but got %s"
-msgstr "期望傳入 %s 的是正十進位整數參數，但卻是 %s"
+msgstr "期望傳入 %s 的是十進位正整數參數，但卻是 %s"
 
 #: find/parser.c:1612
 #, c-format
@@ -1354,7 +1354,7 @@ msgstr "警告：locate 資料庫只可以由標準輸入讀取一次。"
 #: locate/locate.c:1851
 #, c-format
 msgid "time system call failed"
-msgstr "時間系統乎教師敗"
+msgstr "時間系統呼叫失敗"
 
 # e.g. database `%s' is more than 8 days old
 #: locate/locate.c:1862
@@ -1750,6 +1750,5 @@ msgstr "      --version                輸出版本資訊後離開\n"
 msgid "%s: illegal option -- %c\n"
 msgstr "%s：不合法的選項 ─ %c\n"
 
-#, fuzzy
 msgid "block size"
-msgstr "區塊特殊檔案"
+msgstr "區塊大小"
